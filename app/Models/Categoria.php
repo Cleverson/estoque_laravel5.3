@@ -10,11 +10,6 @@ class Categoria extends Model
 
     protected $fillable = ['nome'];
 
-    /**
-     * Get the produtos for the Produto.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
     public function produtos()
     {
         return $this->hasMany(Produto::class);
